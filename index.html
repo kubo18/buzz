@@ -1,46 +1,89 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/clipboard.min.js"></script>
-    <script src="js/m.js"></script>
+    <meta name="description" content="CoolPlayer 支持 iOS 和 Android 的高清流媒体播放器，提供极速下载与流畅播放，免费下载即享高清体验！">
+    <meta name="keywords" content="CoolPlayer, 酷播, 高清播放器, 流媒体播放器, iOS 播放器, Android 播放器, 高清下载, 免费播放器">
+    <meta property="og:title" content="CoolPlayer - 免费高清流媒体播放器下载">
+    <meta property="og:description" content="支持 iOS 和 Android 的高清流媒体播放器，立即免费下载体验！">
+    <meta property="og:image" content="https://www.13579.buzz/images/icon.png">
+
+    <meta property="og:url" content="https://www.13579.buzz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoolPlayer - 免费高清流媒体播放器下载">
+    <meta name="twitter:description" content="支持 iOS 和 Android 的高清流媒体播放器，立即免费下载体验！">
+    <meta name="twitter:image" content="https://www.13579.buzz/images/icon.png">
+    <script src="js/jquery-1.11.0.min.js" defer></script>
+    <script src="js/clipboard.min.js" defer></script>
+    <script src="js/m.js" defer></script>
     <link rel="Shortcut Icon" href="images/icon.png">
-    <title>酷播</title>
+    <title>CoolPlayer - 免费高清播放器，支持 iOS 和 Android</title>
     <link rel="stylesheet" href="css/app.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "CoolPlayer",
+            "operatingSystem": ["iOS", "Android"],
+            "applicationCategory": "MediaApplication",
+            "description": "CoolPlayer 是一款支持 iOS 和 Android 的高清流媒体播放器，提供极速流畅的观看体验。",
+            "url": "https://www.13579.buzz",
+            "softwareVersion": "1.0.1.1126",
+            "datePublished": "2024-11-26",
+            "image": "https://www.13579.buzz/images/icon.png",
+            "downloadUrl": "https://ghproxy.cc/https://raw.githubusercontent.com/kubo18/kb.github.io/refs/heads/main/apk/release/kb.apk",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "1500"
+            }
+        }        
+    </script>
 </head>
 
 <body style="width: 412px; height: 732px; overflow: hidden;">
-    <div style="display:none;">
-        <img src="images/icon.png">
-    </div>
+    <header style="display: none;">
+        <h1 style="font-size: 24px; font-weight: bold; color: #333; text-align: center; margin: 20px 0;">
+            CoolPlayer - 免费高清流媒体播放器
+        </h1>
+    </header>
     <div id="warp">
+        <div class="description">
+            <p style="display: none;">CoolPlayer 是一款支持 iOS 和 Android 的流媒体播放器，提供高清、极速的视频体验。</p>
+        </div>
         <div class="xiazai">
             <div class="xiazai_ios" style="display:none">
                 <a id="copyButton" data-copy-text="1688" href="#" onclick="checkAppInstallation()" class="ppt_dw">
-                    <span>ios下载</span>
+                    <span>立即下载 CoolPlayer iOS 版本</span>
                 </a>
             </div>
             <div class="xiazai_ios" style="display:none">
                 <p data-v-0ea098a2="" class="update-time">V1.0.0 2024-09-17 更新</p>
             </div>
-
-
             <div id="copyButton" data-copy-text="1688" onclick="checkAppInstallation()" class="xiazai_az"
                 style="display:none">
-                <a href="#"><span>Android下载</span></a>
+                <a href="#"><span>立即下载 CoolPlayer Android 版本</span></a>
             </div>
             <div class="xiazai_az" style="display:none">
                 <p data-v-0ea098a2="" class="update-time">V1.0.1.1126 2024-11-26 更新</p>
             </div>
-
+            <div class="xiazai_az">
+                <p data-v-0ea098a2="" class="update-time">&copy; 2024 CoolPlayer. All Rights Reserved.</p>
+            </div>
         </div>
     </div>
     <div class="wtips" style="display:none">
-        <img src="images/tips_weixin_ios.png">
+        <img src="images/tips_weixin_ios.png" alt="CoolPlayer iOS 下载提示">
     </div>
-</body>
+
 </body>
 
 </html>
